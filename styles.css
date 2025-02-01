@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9f9f9; /* Light background */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background: #1a1a1a; /* Dark background */
+  color: #f9f9f9; /* Light text */
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .container {
+  background: rgba(44, 44, 44, 0.9); /* Semi-transparent dark */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #5e35b1; /* Deep purple heading */
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode h1 {
+  color: #7c4dff; /* Lighter purple in dark mode */
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555555;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode label {
+  color: #cccccc; /* Light gray in dark mode */
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode input, body.dark-mode select {
+  background: #444; /* Dark input background */
+  color: #f9f9f9; /* Light text */
+  border-color: #555; /* Dark border */
+}
+
+input:focus, select:focus {
+  border-color: #5e35b1; /* Deep purple border on focus */
+  outline: none;
+}
+
+body.dark-mode input:focus, body.dark-mode select:focus {
+  border-color: #7c4dff; /* Lighter purple border on focus */
+}
+
+button {
+  background: #5e35b1; /* Deep purple */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode button {
+  background: #7c4dff; /* Lighter purple in dark mode */
+}
+
+button:hover {
+  background: #7c4dff; /* Lighter purple on hover */
+  transform: translateY(-2px);
+}
+
+body.dark-mode button:hover {
+  background: #9575cd; /* Even lighter purple on hover in dark mode */
+}
+
+.result {
+  margin-top: 20px;
+}
+
+#output {
+  font-size: 18px;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode #output {
+  color: #f9f9f9; /* Light text in dark mode */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#dark-mode-button {
+  background: #5e35b1; /* Deep purple */
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode #dark-mode-button {
+  background: #7c4dff; /* Lighter purple in dark mode */
+}
+
+#dark-mode-button:hover {
+  background: #7c4dff; /* Lighter purple on hover */
+  transform: scale(1.1);
+}
+
+body.dark-mode #dark-mode-button:hover {
+  background: #9575cd; /* Even lighter purple on hover in dark mode */
+}
