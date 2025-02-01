@@ -160,3 +160,19 @@ body.dark-mode #dark-mode-button {
 body.dark-mode #dark-mode-button:hover {
   background: #9575cd; /* Even lighter purple on hover in dark mode */
 }
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777777; /* Light gray text */
+}
+
+.footer a {
+  color: #5e35b1; /* Deep purple link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #7c4dff; /* Lighter purple on hover */
+}
