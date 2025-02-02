@@ -176,3 +176,24 @@ body.dark-mode #dark-mode-button:hover {
 .footer a:hover {
   color: #7c4dff; /* Lighter purple on hover */
 }
+.name {
+  position: absolute; 
+  top: 20px;  /* Adjust top spacing */
+  left: 20px; /* Adjust left spacing */
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+.name h3 {
+  margin: 0;
+}
+
+.name a {
+  text-decoration: none;
+  color: #333; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.name a:hover {
+  color: #D4AF37; /* Gold hover effect */
+}
